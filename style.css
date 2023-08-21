@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+	background-color: white;
+	font-family: "Times New Roman", Times, serif;
+}
+
+#header {
+	width: 100%;
+	border-bottom: 5px black;
+}
+
+header{
+	box-shadow: 0 1px 0 lightgray;
+}
+
+.container{
+	padding: 10px 20%;
+}
+
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+	padding-right: 20px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+	letter-spacing: 4px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #7a00cc;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+	padding-right: 5px;
+    width: 100%;
+}
+
+.header-text{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span{
+    color: #082989;
+}
+
+/*---------------------Join Us------------------------*/
+
+.join-container{
+	padding: 100px;
+	text-align: center;
+	width: 100%;
+	height: 100vh;
+	background: url("race.jpg");
+	background-size: cover;
+}
+
+.join-container p{
+	margin-top: 10%;
+	font-weight: bold;
+	font-size: 75px;
+	color: white;
+}
+
+.btn{
+	display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #7a00cc;
+    background-color: #7a00cc;
+    padding: 14px 50px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+	letter-spacing: 4px;
+	box-shadow: 0 1px 0 lightgray;
+}
+
+.btn:hover{
+    background: #470175;
+    border: 1px solid #470175;
+    color:#fff;
+}
+
+section {
+	margin-bottom: 40px;
+}
+
+footer {
+	background-color: #7a00cc;
+	color: black;
+	padding: 20px;
+	text-align: center;
+}
