@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 html{
@@ -10,16 +9,20 @@ html{
 
 body {
 	background-color: white;
-	font-family: "Times New Roman", Times, serif;
+}
+
+main{
+    font-family: "VWHVVW+AGaramondPro-Regular",sans-serif;
 }
 
 #header {
 	width: 100%;
+    font-family: "Times New Roman", Times, serif;
 	border-bottom: 5px black;
 }
 
 header{
-	box-shadow: 0 1px 0 lightgray;
+	box-shadow: 0 1px 0 #7a00cc;
 }
 
 .container{
@@ -51,7 +54,7 @@ nav ul li a{
 nav ul li a::after{
     content: '';
     width: 0%;
-    height: 3px;
+    height: 1px;
     background: #7a00cc;
     position: absolute;
     left: 0;
@@ -84,34 +87,49 @@ nav ul li a:hover::after{
 /*---------------------Join Us------------------------*/
 
 .join-container{
-	padding: 100px;
-	text-align: center;
-	width: 100%;
-	height: 100vh;
-	background: url("race.jpg");
-	background-size: cover;
+    padding: 60px;
 }
 
-.join-container p{
-	margin-top: 10%;
-	font-weight: bold;
-	font-size: 75px;
-	color: white;
+.join-container img{
+    box-shadow: 10px 10px 0 lightgray;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 40px;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    font-weight: lighter;
+}
+
+h2{
+    font-weight:lighter;
+}
+.col-1{
+    padding-left: 20px;
+    padding-right: 5px;
+    flex-basis: 35%;
+    font-size: 11px;
+    letter-spacing: 2px;
+    vertical-align: middle;
 }
 
 .btn{
 	display: block;
-    margin: 50px auto;
+    margin: 20px auto;
     width: fit-content;
     border: 1px solid #7a00cc;
-    background-color: #7a00cc;
-    padding: 14px 50px;
-    border-radius: 20px;
+    padding: 15px 60px;
     text-decoration: none;
-    color: #fff;
+    color: #7a00cc;
     transition: background 0.5s;
 	letter-spacing: 4px;
-	box-shadow: 0 1px 0 lightgray;
+    background: #fff;
+    position: absolute;
 }
 
 .btn:hover{
@@ -129,4 +147,125 @@ footer {
 	color: black;
 	padding: 20px;
 	text-align: center;
+}
+
+/*---------------------About Us------------------------*/
+
+.about-container{
+    text-align: center;
+    background-color: #f0ecec;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h4{
+    font-size: 40px;
+    padding-bottom: 20px;
+    font-weight: lighter;
+}
+
+.about-row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;  
+}
+
+.about-col{
+    position: relative;
+    overflow: hidden;
+    color:black;
+    box-shadow: 10px 10px 0 lightgray;
+}
+
+.about-row img{
+    width: 100%;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 30%;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.about-col:hover img{
+    transform: scale(1.1);
+}
+
+.about-col:hover .layer{
+    height: 45%;
+}
+
+.about-btn{
+    display: none;
+    margin: 20px auto;
+    width: fit-content;
+    border: 1px solid #7a00cc;
+    background: #7a00cc;
+    padding: 10px 42px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+	letter-spacing: 4px;
+	box-shadow: 0 1px 0 lightgray;
+    position: relative;
+    scale: 0.75;
+} 
+
+.about-col:hover .about-btn{
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.about-btn:hover{
+    background: whitesmoke;
+    border: 1px solid #470175;
+    color:#470175;
+}
+
+/*---------------------Sponsorship------------------------*/
+.about-row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;  
+}
+/*---------------------Font------------------------*/
+
+@font-face {
+    font-family: "VWHVVW+AGaramondPro-Regular";
+    src: url("https://db.onlinewebfonts.com/t/aa5125a27a33ad4797be14497555ff21.eot");
+    src: url("https://db.onlinewebfonts.com/t/aa5125a27a33ad4797be14497555ff21.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/aa5125a27a33ad4797be14497555ff21.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/aa5125a27a33ad4797be14497555ff21.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/aa5125a27a33ad4797be14497555ff21.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/aa5125a27a33ad4797be14497555ff21.svg#VWHVVW+AGaramondPro-Regular")format("svg");
 }
