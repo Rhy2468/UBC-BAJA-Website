@@ -8,11 +8,12 @@ html{
 }
 
 body {
-	background-color: white;
+	background-color: #ffffff;
 }
 
 main{
-    font-family: "VWHVVW+AGaramondPro-Regular",sans-serif;
+    font-family: "Didot",sans-serif;
+    line-height: 150%;
 }
 
 #header {
@@ -26,7 +27,8 @@ header{
 }
 
 .container{
-	padding: 10px 20%;
+	padding: 10px 5%;
+    padding-right: 100px;
 }
 
 nav{
@@ -100,7 +102,7 @@ nav ul li a:hover::after{
 }
 
 h1{
-    font-size: 40px;
+    font-size: 50px;
     padding-top: 150px;
     padding-bottom: 20px;
     font-weight: lighter;
@@ -138,17 +140,6 @@ h2{
     color:#fff;
 }
 
-section {
-	margin-bottom: 40px;
-}
-
-footer {
-	background-color: #7a00cc;
-	color: black;
-	padding: 20px;
-	text-align: center;
-}
-
 /*---------------------About Us------------------------*/
 
 .about-container{
@@ -161,7 +152,7 @@ footer {
 }
 
 h4{
-    font-size: 40px;
+    font-size: 50px;
     padding-bottom: 20px;
     font-weight: lighter;
 }
@@ -210,7 +201,7 @@ h4{
 .layer a{
     margin-top: 20px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 60px;
     width: 60px;
     height: 60px;
@@ -253,19 +244,73 @@ h4{
 }
 
 /*---------------------Sponsorship------------------------*/
-.about-row{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;  
+.sponsor-container{
+    padding: 100px;
+    background-size: cover;
+    color:white;
+    display: table-cell;
+    font-size: 35px;
+}
+
+h5{
+    font-size: 40px;
+    text-align: left;
+    padding-bottom: 25px;
+}
+
+
+.sponsor-container img{
+    width: 100%;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.sponsor-col{
+    position: relative;
+    overflow: hidden;
+    color:white;
+    box-shadow: 10px 10px 0 lightgray;
+}
+
+.sponsor-layer{
+    width: 33%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 14px;
+    transition: height 0.5s;
+    opacity: .2;
+    padding: 50px;
+}
+
+.sponsor-col:hover .sponsor-layer{
+    opacity: 1;
+}
+
+.sponsor-btn{
+    margin: 20px auto;
+    width: fit-content;
+    border: 1px solid #7a00cc;
+    background: #7a00cc;
+    padding: 10px 42px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+	letter-spacing: 4px;
+	box-shadow: 0 1px 0 lightgray;
+    position: relative;
+    scale: 0.75;
+}
+
+.sponsor-btn:hover{
+    background: whitesmoke;
+    border: 1px solid #470175;
+    color:#470175;
 }
 /*---------------------Font------------------------*/
-
-@font-face {
-    font-family: "VWHVVW+AGaramondPro-Regular";
-    src: url("https://db.onlinewebfonts.com/t/aa5125a27a33ad4797be14497555ff21.eot");
-    src: url("https://db.onlinewebfonts.com/t/aa5125a27a33ad4797be14497555ff21.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/aa5125a27a33ad4797be14497555ff21.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/aa5125a27a33ad4797be14497555ff21.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/aa5125a27a33ad4797be14497555ff21.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/aa5125a27a33ad4797be14497555ff21.svg#VWHVVW+AGaramondPro-Regular")format("svg");
-}
