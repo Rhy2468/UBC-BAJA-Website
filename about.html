@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>UBC BAJA</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="about-style.css">
 </head>
 <body>
 	<header>
@@ -20,5 +20,59 @@
 			</div>
 		</header>
 	</header>
+
+<!--------------------The Race---------------------->
+	<div class="about-container">
+		<h1>The Race</h1>
+		<div class="video-container">
+			<iframe width="1258" height="717" src="https://www.youtube.com/embed/pKP2CJpA25c" 
+			title="2017-18 Frame Build Time Lapse" frameborder="0" 
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+			allowfullscreen>
+			</iframe>
+		</div>
+		<h2>100 universities and colleges race wheel-to-wheel in a grueling 
+			four-hour endurance race over rocks, jumps, mud pits and other obstacles 
+			designed to push the vehicles’ limits.
+		</h2>
+		<h3>Founded in 2011, the team has designed, manufactured, and competed annually 
+			at Baja SAE competitions across the continent. At the end of each academic year, 
+			our team competes internationally in the Baja SAE collegiate design series. \
+			Organized by the Society of Automotive Engineers (SAE) and taking place in the 
+			United States, these intercollegiate competitions take place over four days. 
+			There are an array of events to be judged in; scores are based on the team’s 
+			engineering design, business presentation and vehicle performance on the track \
+			over punishing terrain.
+		</h3>
+	</div>
+
+<!--------------------Video---------------------->
+
+<script>
+    
+    const tabs = document.querySelectorAll('.tab');
+    
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+       
+        const tabIndex = tab.getAttribute('data-tab');
+        
+        tabs.forEach(tab => {
+          tab.classList.remove('active');
+        });
+       
+        tab.classList.add('active');
+        
+        tabContents.forEach(tabContent => {
+          tabContent.classList.remove('active');
+        });
+       
+        const currentTabContent = document.querySelector(`.tab-content[data-tab="${tabIndex}"]`);
+        currentTabContent.classList.add('active');
+      });
+    });
+  </script>
 </body>
 </html>
