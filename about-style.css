@@ -108,9 +108,13 @@ nav ul li a:hover::after{
 .col-1{
     padding-left: 20px;
     padding-right: 5px;
-    flex-basis: 60%;
+    flex-basis: 40%;
     font-size: 12px;
     letter-spacing: 2px;
+}
+
+.col-2{
+    flex-basis: 60%;
 }
 
 h1{
