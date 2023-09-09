@@ -22,13 +22,12 @@ main{
 }
 
 header{
-	box-shadow: 0 1px 0 white;
-    background: #504e5f;
+	box-shadow: 0 2px 0 black;
+    background: white;
 }
 
 .container{
 	padding: 10px 5%;
-    padding-right: 100px;
 }
 
 nav{
@@ -46,7 +45,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: white;
+    color: #504e5f;
     text-decoration: none;
     font-size: 13px;
 	letter-spacing: 4px;
@@ -57,7 +56,7 @@ nav ul li a::after{
     content: '';
     width: 0%;
     height: 1px;
-    background: white;
+    background: #504e5f;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -119,10 +118,11 @@ h2{
 }
 .col-1{
     padding-left: 20px;
-    padding-right: 5px;
-    flex-basis: 50%;
+    padding-right: 20px;
+    flex-basis: 60%;
     font-size: 11px;
     letter-spacing: 2px;
+    
 }
 
 .btn{
@@ -149,10 +149,7 @@ h2{
 
 .about-container{
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 100px;
     background-color: #3a3946;
 }
 
@@ -220,8 +217,8 @@ h4{
     margin-top: 10px;
     display: none;
     width: fit-content;
-    border: 1px solid #7a00cc;
-    background: #7a00cc;
+    border: 1px solid #470175;
+    background: #470175;
     padding: 15px 60px;
     text-decoration: none;
     color: #fff;
@@ -301,14 +298,13 @@ p{
 .sponsor-btn{
     margin: 20px auto;
     width: fit-content;
-    border: 1px solid #7a00cc;
-    background: #7a00cc;
+    border: 1px solid #470175;
+    background: #470175;
     padding: 15px 60px;
     text-decoration: none;
     color: #fff;
     transition: background 0.5s;
 	letter-spacing: 4px;
-	box-shadow: 0 1px 0 #ad84c6;
     position: relative;
 }
 
@@ -319,8 +315,8 @@ p{
 }
 /*---------------------Footer------------------------*/
 footer {
-    background-color: #3a3946;
-    color: white;
+    background-color: white;
+    color: black;
     display: flex;
     justify-content: space-between;
     padding: 50px;
@@ -333,8 +329,8 @@ footer {
     align-items: flex-start;
 }
   
-.contact h3 {
-    font-size: 40px;
+.cotnact h3 {
+    font-size: 4%;
     margin: 0;
 }
   
@@ -354,6 +350,7 @@ footer {
     background-color: black;
     color: #fff;
     display: flex;
+
     justify-content: center;
     align-items: center;
     margin-right: 20px;
@@ -363,4 +360,153 @@ footer {
     font-size: 24px;
 }
   
-/*---------------------Font------------------------*/
+/*---------------------CSS for small screens------------------------*/
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 900px){
+    #header{
+        background-image: url();
+    }
+
+    .header-text{
+        margin-top: 0%;
+        font-size: 16px;
+    }
+
+    .header-text h1{
+        font-size: 30px;
+    }
+    
+    nav .fa-solid{
+        display: block;
+        color: #504e5f;
+        font-size: 25px;
+    }
+
+    nav ul{
+        background: #3a3946;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+        padding-right: 0px;
+    }
+
+    nav ul li a{
+        color:#fff;
+    }
+    nav ul li a::after{
+        background-color: #fff;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px; 
+        left: 25px;
+        cursor: pointer;
+        color:#fff;
+    }
+    h1{
+        font-size: 45px;
+    }
+    h3{
+        font-size: 45px;
+    }
+    h4{
+        font-size: 45px;
+    }
+    
+
+    .row{
+        display: flex;
+        align-items: start;
+        flex-direction: column-reverse;
+    }
+
+    .join-container{
+        padding: 0px;
+        padding-top: 10px;
+        padding-bottom: 100px;
+    }
+    .join-container img{
+        box-shadow: 0px 0px 0 #292831;
+        width: 100%;
+    }
+    .col-1{
+        padding-top: 30px;
+    }
+    .btn{
+        padding: 10px 40px;
+    }
+
+
+    .about-container{
+        padding: 0px;
+        padding-bottom: 80px;
+    }
+
+    .about-row{
+        display:inline;
+    }
+
+    .about-col{
+        margin-top: 10px;
+    }
+    .layer{
+        height: 45%;
+    }
+    .about-btn{
+        display: block;
+        padding: 10px 40px;
+    }
+
+
+    .sponsor-container{
+        padding: 0px;
+        display: flex;
+        position: relative;
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+    .sponsor-layer{
+        width: 100%;
+        height: 45%;
+        background: none;
+        display: flex;
+        position: relative;
+        opacity: 1;
+        text-align: left;
+    }
+    .sponsor-btn{
+        padding: 10px 40px;
+    }
+    .sponsor-col{
+        box-shadow: 0px 0px 0 #292831;
+    }
+
+
+    footer{
+        padding: 20px;
+    }
+
+    .icon{
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .icon i {
+        font-size: 20px;
+    }
+}

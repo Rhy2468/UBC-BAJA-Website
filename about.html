@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
 	<title>UBC BAJA</title>
 	<link rel="stylesheet" type="text/css" href="about-style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/f5c0ace19e.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
-		<header>
-			<div class="container">
-				<nav>
-					<img src="General Pictures/UBC-Baja-Logo-2017-Goat-100x122.png" class="logo">
-					<ul>
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="about.html">ABOUT US</a></li>
-						<li><a href="team.html">THE TEAM</a></li>
-						<li><a href="sponsor.html">SPONSORSHIP</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
+		<div class="container">
+			<nav>
+				<img src="General Pictures/UBC-Baja-Logo-2017-Goat-100x122.png" class="logo">
+				<ul id = "sidemenu">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT US</a></li>
+					<li><a href="team.html">THE TEAM</a></li>
+					<li><a href="sponsor.html">SPONSORSHIP</a></li>
+					<i class="fa-solid fa-x" onclick="closeMenu()"></i>
+				</ul>
+				<i class="fa-solid fa-bars" onclick="openMenu()"></i>
+			</nav>
+		</div>
 	</header>
 
 <!--------------------The Race---------------------->
@@ -80,5 +85,19 @@
       });
     });
   </script>
+
+  <!--------------------Small Screen--------------------->
+	<script>
+		var sidemenu = document.getElementById("sidemenu");
+
+		function openMenu(){
+			sidemenu.style.right = "0";
+		}
+
+		function closeMenu(){
+			sidemenu.style.right= "-200px";
+		}
+
+	</script>
 </body>
 </html>
