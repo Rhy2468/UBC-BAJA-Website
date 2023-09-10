@@ -21,13 +21,16 @@ main{
 }
 
 header{
-	box-shadow: 0 1px 0 white;
-    background: #504e5f;
+	box-shadow: 0 2px 0 black;
+    background: white;
+    width: 95%;
+    justify-content: center;
+    margin: auto;
+    box-shadow: 10px 10px 0 #292831;
 }
 
 .container{
 	padding: 10px 5%;
-    padding-right: 100px;
 }
 
 nav{
@@ -45,7 +48,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: white;
+    color: #504e5f;
     text-decoration: none;
     font-size: 13px;
 	letter-spacing: 4px;
@@ -56,7 +59,7 @@ nav ul li a::after{
     content: '';
     width: 0%;
     height: 1px;
-    background: white;
+    background: #504e5f;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -84,6 +87,7 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #1b1a23;
 }
+
 
 
 h1{

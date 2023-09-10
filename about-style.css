@@ -18,17 +18,19 @@ main{
 
 #header {
 	width: 100%;
-    font-family: "Times New Roman", Times, serif;
 }
 
 header{
-	box-shadow: 0 1px 0 white;
-    background: #504e5f;
+	box-shadow: 0 2px 0 black;
+    background: white;
+    width: 95%;
+    justify-content: center;
+    margin: auto;
+    box-shadow: 10px 10px 0 #292831;
 }
 
 .container{
 	padding: 10px 5%;
-    padding-right: 100px;
 }
 
 nav{
@@ -46,7 +48,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: white;
+    color: #504e5f;
     text-decoration: none;
     font-size: 13px;
 	letter-spacing: 4px;
@@ -57,7 +59,7 @@ nav ul li a::after{
     content: '';
     width: 0%;
     height: 1px;
-    background: white;
+    background: #504e5f;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -85,6 +87,7 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #1b1a23;
 }
+
 
 /*---------------------The Race------------------------*/
 .about-container{
@@ -119,7 +122,6 @@ nav ul li a:hover::after{
 
 h1{
     font-size: 50px;
-    padding-bottom: 20px;
     font-weight: lighter;
 }
 
@@ -157,6 +159,9 @@ nav .fa-solid{
         background-image: url();
     }
 
+    header{
+        width: 100%;
+    }
     .header-text{
         margin-top: 0%;
         font-size: 16px;
@@ -168,11 +173,12 @@ nav .fa-solid{
     
     nav .fa-solid{
         display: block;
+        color: #504e5f;
         font-size: 25px;
     }
 
     nav ul{
-        background: #082989;
+        background: #3a3946;
         position: fixed;
         top: 0;
         right: -200px;
@@ -186,10 +192,14 @@ nav .fa-solid{
     nav ul li{
         display: block;
         margin: 25px;
+        padding-right: 0px;
     }
 
     nav ul li a{
         color:#fff;
+    }
+    nav ul li a::after{
+        background-color: #fff;
     }
 
     nav ul .fa-solid{
@@ -200,5 +210,32 @@ nav .fa-solid{
         color:#fff;
     }
 
+    .about-container{
+        padding: 0px;
+    }
+
+    .row{
+        display: flex;
+        align-items: start;
+        flex-direction: column-reverse;
+    }
+
+    .about-container img{
+        width: 100%;
+        box-shadow: 0 0 0 #292831;
+    }
+
+    h1{
+        padding-bottom: 0px;
+        padding-top: 20px;
+    }
+
+    h3{
+        padding-bottom: 20px;
+    }
+    
+    .video-container iframe {
+        padding: 0px;
+    }
 }
 

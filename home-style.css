@@ -10,20 +10,19 @@ html{
 body {
 	background-color: #504e5f;
     color: white;
-}
-
-main{
     font-family: "Times New Roman", Times, serif;
 }
-
 #header {
 	width: 100%;
-    font-family: "Times New Roman", Times, serif;
 }
 
 header{
 	box-shadow: 0 2px 0 black;
     background: white;
+    width: 95%;
+    justify-content: center;
+    margin: auto;
+    box-shadow: 10px 10px 0 #292831;
 }
 
 .container{
@@ -115,6 +114,7 @@ h2{
     line-height: 150%;
     vertical-align: middle;
     position: relative;
+    font-weight: lighter;
 }
 .col-1{
     padding-left: 20px;
@@ -157,6 +157,7 @@ h4{
     font-size: 50px;
     padding-bottom: 20px;
     font-weight: lighter;
+    
 }
 
 .about-row{
@@ -199,10 +200,12 @@ h4{
     padding: 10px;
     font-size: 15px;
     font-weight: 500;
+    font-weight: lighter;
 }
 
 .layer p{
     font-size: 15px;
+    font-weight: lighter;
 }
 
 .about-col:hover img{
@@ -210,7 +213,7 @@ h4{
 }
 
 .about-col:hover .layer{
-    height: 45%;
+    height: 50%;
 }
 
 .about-btn{
@@ -227,6 +230,7 @@ h4{
 	box-shadow: 0 1px 0 292831;
     position: relative;
     scale: 0.75;
+    font-family: "Times New Roman", Times, serif;
 } 
 
 .about-col:hover .about-btn{
@@ -253,11 +257,13 @@ h5{
     font-size: 40px;
     text-align: left;
     padding-bottom: 25px;
+    font-weight: lighter;
 }
 
 p{
     line-height: 150%;
     font-size: 20px;
+    font-weight: lighter;
 }
 
 
@@ -285,7 +291,6 @@ p{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    font-size: 14px;
     transition: height 0.5s;
     opacity: .2;
     padding: 50px;
@@ -306,6 +311,7 @@ p{
     transition: background 0.5s;
 	letter-spacing: 4px;
     position: relative;
+    font-family: "Times New Roman", Times, serif;
 }
 
 .sponsor-btn:hover{
@@ -329,13 +335,15 @@ footer {
     align-items: flex-start;
 }
   
-.cotnact h3 {
-    font-size: 4%;
+.contact h3 {
+    font-size: 30px;
     margin: 0;
+    font-weight: lighter;
 }
   
 .contact p {
     margin: 10px 0 0 0;
+    font-weight: lighter;
 }
   
 .icons {
@@ -365,11 +373,44 @@ nav .fa-solid{
     display: none;
 }
 
+@media only screen and (max-width: 1350px){
+    .about-container{
+        padding: 50px;
+        padding-bottom: 80px;
+    }
+
+    .about-row{
+        display:inline;
+    }
+
+    .about-col{
+        margin-top: 10px;
+    }
+    .layer{
+        height: 30%;
+    }
+    .about-btn{
+        display: block;
+        padding: 10px 40px;
+    }
+
+    .sponsor-container{
+        padding: 0px;
+    }
+
+    .sponsor-layer{
+        width: 50%;
+    }
+}
+
 @media only screen and (max-width: 900px){
     #header{
         background-image: url();
     }
 
+    header{
+        width: 100%;
+    }
     .header-text{
         margin-top: 0%;
         font-size: 16px;
@@ -419,12 +460,15 @@ nav .fa-solid{
     }
     h1{
         font-size: 45px;
+        font-weight: lighter;
     }
     h3{
         font-size: 45px;
+        font-weight: lighter;
     }
     h4{
         font-size: 45px;
+        font-weight: lighter;
     }
     
 
@@ -436,7 +480,6 @@ nav .fa-solid{
 
     .join-container{
         padding: 0px;
-        padding-top: 10px;
         padding-bottom: 100px;
     }
     .join-container img{
@@ -444,7 +487,7 @@ nav .fa-solid{
         width: 100%;
     }
     .col-1{
-        padding-top: 30px;
+        padding: 30px;
     }
     .btn{
         padding: 10px 40px;
@@ -487,6 +530,7 @@ nav .fa-solid{
         position: relative;
         opacity: 1;
         text-align: left;
+        justify-content: left;
     }
     .sponsor-btn{
         padding: 10px 40px;
